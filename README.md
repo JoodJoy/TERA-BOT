@@ -14,3 +14,15 @@ while (ProjectDownloaded == true && (credits == 0 && projectElsewhere == true))
 
 ========
 TBP is Coded in C# // uses JSON files to store data // hooks to selected program
+
+
+F7 - Toggle Radar
+F8 - Toggle between path/roam mode
+F9 - Toggle bot control
+F10 - Enable edit mode
+F11 - create movement node
+Ctrl + F11 - create gather node
+F12 - create roam / vendor node
+delete - remove node
+Home - create safe zones
+End - create dead zone
