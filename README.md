@@ -8,7 +8,7 @@ Thanks a bunch.
 -	Zeke
 
 TBP is Coded in C# // uses JSON files to store data // hooks to selected program
-========
+
 F7 - Toggle Radar
 F8 - Toggle between path/roam mode
 F9 - Toggle bot control
@@ -19,4 +19,3 @@ F12 - create roam / vendor node
 Delete - remove node
 Home - create safe zones
 End - create dead zone
-========
