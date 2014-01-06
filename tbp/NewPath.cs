@@ -99,8 +99,8 @@ namespace tbp
             // 
             // nameTextBox
             // 
-            this.nameTextBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.nameTextBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.nameTextBox.BackColor = System.Drawing.Color.White;
+            this.nameTextBox.ForeColor = System.Drawing.Color.Black;
             this.nameTextBox.Location = new System.Drawing.Point(15, 25);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(179, 20);

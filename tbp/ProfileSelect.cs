@@ -156,77 +156,89 @@ namespace tbp
 
     private void InitializeComponent()
     {
-      ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (ProfileSelect));
-      this.profileListBox = new ListBox();
-      this.editButton = new Button();
-      this.deleteButton = new Button();
-      this.createButton = new Button();
-      this.useButton = new Button();
-      this.SuspendLayout();
-      this.profileListBox.BackColor = Color.Black;
-      this.profileListBox.ForeColor = Color.White;
-      this.profileListBox.FormattingEnabled = true;
-      this.profileListBox.Items.AddRange(new object[1]
-      {
-        (object) " "
-      });
-      this.profileListBox.Location = new Point(12, 12);
-      this.profileListBox.Name = "profileListBox";
-      this.profileListBox.Size = new Size(225, 186);
-      this.profileListBox.Sorted = true;
-      this.profileListBox.TabIndex = 1;
-      this.profileListBox.TabStop = false;
-      this.profileListBox.SelectedIndexChanged += new EventHandler(this.profileListBox_SelectedIndexChanged);
-      this.profileListBox.DoubleClick += new EventHandler(this.profileListBox_DoubleClick);
-      this.editButton.Location = new Point(180, 204);
-      this.editButton.Name = "editButton";
-      this.editButton.Size = new Size(57, 23);
-      this.editButton.TabIndex = 7;
-      this.editButton.TabStop = false;
-      this.editButton.Text = "Edit";
-      this.editButton.UseVisualStyleBackColor = true;
-      this.editButton.Click += new EventHandler(this.editButton_Click);
-      this.deleteButton.Location = new Point(123, 204);
-      this.deleteButton.Name = "deleteButton";
-      this.deleteButton.Size = new Size(51, 23);
-      this.deleteButton.TabIndex = 6;
-      this.deleteButton.TabStop = false;
-      this.deleteButton.Text = "Delete";
-      this.deleteButton.UseVisualStyleBackColor = true;
-      this.deleteButton.Click += new EventHandler(this.deleteButton_Click_1);
-      this.createButton.Location = new Point(66, 204);
-      this.createButton.Name = "createButton";
-      this.createButton.Size = new Size(51, 23);
-      this.createButton.TabIndex = 5;
-      this.createButton.TabStop = false;
-      this.createButton.Text = "Create";
-      this.createButton.UseVisualStyleBackColor = true;
-      this.createButton.Click += new EventHandler(this.createButton_Click_1);
-      this.useButton.Location = new Point(12, 204);
-      this.useButton.Name = "useButton";
-      this.useButton.Size = new Size(47, 23);
-      this.useButton.TabIndex = 4;
-      this.useButton.TabStop = false;
-      this.useButton.Text = "Use";
-      this.useButton.UseVisualStyleBackColor = true;
-      this.useButton.Click += new EventHandler(this.useButton_Click_1);
-//      this.AutoScaleDimensions = new SizeF(6f, 13f);
-//      this.AutoScaleMode = AutoScaleMode.Font;
-      this.ClientSize = new Size(249, 235);
-      this.Controls.Add((Control) this.editButton);
-      this.Controls.Add((Control) this.deleteButton);
-      this.Controls.Add((Control) this.createButton);
-      this.Controls.Add((Control) this.useButton);
-      this.Controls.Add((Control) this.profileListBox);
-//      this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
-//      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "ProfileSelect";
-      this.StartPosition = FormStartPosition.CenterScreen;
-      this.Text = "Profiles";
-      this.TopMost = true;
-      this.ResumeLayout(false);
+            this.profileListBox = new System.Windows.Forms.ListBox();
+            this.editButton = new System.Windows.Forms.Button();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.createButton = new System.Windows.Forms.Button();
+            this.useButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // profileListBox
+            // 
+            this.profileListBox.BackColor = System.Drawing.Color.White;
+            this.profileListBox.ForeColor = System.Drawing.Color.Black;
+            this.profileListBox.FormattingEnabled = true;
+            this.profileListBox.Items.AddRange(new object[] {
+            " "});
+            this.profileListBox.Location = new System.Drawing.Point(12, 12);
+            this.profileListBox.Name = "profileListBox";
+            this.profileListBox.Size = new System.Drawing.Size(225, 186);
+            this.profileListBox.Sorted = true;
+            this.profileListBox.TabIndex = 1;
+            this.profileListBox.TabStop = false;
+            this.profileListBox.SelectedIndexChanged += new System.EventHandler(this.profileListBox_SelectedIndexChanged);
+            this.profileListBox.DoubleClick += new System.EventHandler(this.profileListBox_DoubleClick);
+            // 
+            // editButton
+            // 
+            this.editButton.Location = new System.Drawing.Point(180, 204);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(57, 23);
+            this.editButton.TabIndex = 7;
+            this.editButton.TabStop = false;
+            this.editButton.Text = "Edit";
+            this.editButton.UseVisualStyleBackColor = true;
+            this.editButton.Click += new System.EventHandler(this.editButton_Click);
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.Location = new System.Drawing.Point(123, 204);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(51, 23);
+            this.deleteButton.TabIndex = 6;
+            this.deleteButton.TabStop = false;
+            this.deleteButton.Text = "Delete";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click_1);
+            // 
+            // createButton
+            // 
+            this.createButton.Location = new System.Drawing.Point(66, 204);
+            this.createButton.Name = "createButton";
+            this.createButton.Size = new System.Drawing.Size(51, 23);
+            this.createButton.TabIndex = 5;
+            this.createButton.TabStop = false;
+            this.createButton.Text = "Create";
+            this.createButton.UseVisualStyleBackColor = true;
+            this.createButton.Click += new System.EventHandler(this.createButton_Click_1);
+            // 
+            // useButton
+            // 
+            this.useButton.Location = new System.Drawing.Point(12, 204);
+            this.useButton.Name = "useButton";
+            this.useButton.Size = new System.Drawing.Size(47, 23);
+            this.useButton.TabIndex = 4;
+            this.useButton.TabStop = false;
+            this.useButton.Text = "Use";
+            this.useButton.UseVisualStyleBackColor = true;
+            this.useButton.Click += new System.EventHandler(this.useButton_Click_1);
+            // 
+            // ProfileSelect
+            // 
+            this.ClientSize = new System.Drawing.Size(249, 235);
+            this.Controls.Add(this.editButton);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.createButton);
+            this.Controls.Add(this.useButton);
+            this.Controls.Add(this.profileListBox);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ProfileSelect";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Profiles";
+            this.TopMost = true;
+            this.ResumeLayout(false);
+
     }
   }
 }

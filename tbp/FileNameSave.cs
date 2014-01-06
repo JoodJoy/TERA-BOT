@@ -127,43 +127,48 @@ namespace tbp
 
     private void InitializeComponent()
     {
-      ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (FileNameSave));
-      this.textBox = new TextBox();
-      this.saveButton = new Button();
-      this.SuspendLayout();
-      this.textBox.BackColor = Color.Black;
-      this.textBox.ForeColor = Color.White;
-      this.textBox.Location = new Point(12, 12);
-      this.textBox.MaxLength = 64;
-      this.textBox.Name = "textBox";
-      this.textBox.Size = new Size(258, 20);
-      this.textBox.TabIndex = 0;
-      this.textBox.TabStop = false;
-      this.saveButton.Location = new Point(277, 10);
-      this.saveButton.Name = "saveButton";
-      this.saveButton.Size = new Size(40, 23);
-      this.saveButton.TabIndex = 1;
-      this.saveButton.Text = "Save";
-      this.saveButton.UseVisualStyleBackColor = true;
-      this.saveButton.Click += new EventHandler(this.button1_Click);
-//      this.AutoScaleDimensions = new SizeF(6f, 13f);
-//      this.AutoScaleMode = AutoScaleMode.Font;
-      this.ClientSize = new Size(328, 45);
-      this.Controls.Add((Control) this.saveButton);
-      this.Controls.Add((Control) this.textBox);
-//      this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
-//      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
-      this.KeyPreview = true;
-      this.MaximizeBox = false;
-      this.MinimizeBox = false;
-      this.Name = "FileNameSave";
-      this.ShowIcon = false;
-      this.StartPosition = FormStartPosition.CenterScreen;
-      this.Text = "Enter a new file name";
-      this.TopMost = true;
-      this.KeyDown += new KeyEventHandler(this.FileNameSave_KeyDown);
-      this.ResumeLayout(false);
-      this.PerformLayout();
+            this.textBox = new System.Windows.Forms.TextBox();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // textBox
+            // 
+            this.textBox.BackColor = System.Drawing.Color.White;
+            this.textBox.ForeColor = System.Drawing.Color.Black;
+            this.textBox.Location = new System.Drawing.Point(12, 12);
+            this.textBox.MaxLength = 64;
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(258, 20);
+            this.textBox.TabIndex = 0;
+            this.textBox.TabStop = false;
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(277, 10);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(40, 23);
+            this.saveButton.TabIndex = 1;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FileNameSave
+            // 
+            this.ClientSize = new System.Drawing.Size(328, 45);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.textBox);
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FileNameSave";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Enter a new file name";
+            this.TopMost = true;
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FileNameSave_KeyDown);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
   }
 }
