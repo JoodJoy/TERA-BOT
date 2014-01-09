@@ -25,8 +25,9 @@ TBP is Coded in C# // uses JSON files to store data // hooks to selected program
 -	Home - create safe zones
 -	End - create dead zone
 
-* Please note that the TBP released on github is outdated when compared to the current version that I own. *
 
-* Added my old cheat table for the winter patch 2013. I will not update it or will I check and see if it's patched. *
+>Please note that the TBP released on github is outdated when compared to the current version that I own.
+
+>Added my old cheat table for the winter patch 2013. I will not update it or will I check and see if it's patched.
 
 Email me at mmobust@gmail.com if you need help with anything.
