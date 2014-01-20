@@ -17,12 +17,7 @@ namespace tbp
 {
   public class MainUI : Form
   {
-
-    // WANT it to start in lower right corner. // UPDATE  - DID IT :3
-      // C++ Code
-      // System::Drawing::Rectangle workingRectangle = Screen::PrimaryScreen->WorkingArea;
-      // Location = Point(workingRectangle.Width - Width - 10, workingRectangle.Height - Height - 10);
-     
+  
     private IntPtr teraWindowHandle = MainUI.FindWindow((string) null, "TERA");
     private Point inventBase = new Point(820, 220);
     private Inventory invent = new Inventory();
@@ -847,15 +842,20 @@ namespace tbp
         InputSimulator.SimulateKeyUp(VirtualKeyCode.VK_A);
         InputSimulator.SimulateKeyUp(VirtualKeyCode.VK_D);
       }
+   
       if (this.hpPercent < this.config.HealMin && this.combatState == 1 && this.config.useHealSkill)
         this.autoHealTimer.Enabled = true;
       if (this.hpPercent >= this.config.RestMin || this.combatState != 0 || (!this.config.useAutoRest || this.safeZonesList.Count <= 0))
         return;
       this.restTimer.Enabled = true;
+
     }
 
     private void restTimer_Tick(object sender, EventArgs e)
     {
+
+   //stupid function
+        //very buggy.
       if (this.combatState == 1)
         this.restTimer.Enabled = false;
       if (this.hpPercent < this.config.RestMax)
@@ -875,6 +875,7 @@ namespace tbp
         this.restTimer.Enabled = false;
         this.usedRestSkill = false;
       }
+        
     }
 
     private void autoHealTimer_Tick(object sender, EventArgs e)
@@ -979,7 +980,7 @@ namespace tbp
         {
           if (to.name != null)
           {
-            if (to.name.Contains("BONF"))
+            if (to.name.Contains("BONF")) // bonfie :3
               to.type = -1;
             if ((double) Math.Abs(to.y) - (double) Math.Abs(this.player.y) > 500.0)
               to.type = -1;

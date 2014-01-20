@@ -15,7 +15,7 @@ namespace tbp
       if (File.Exists("csSecure.exe"))
         File.Delete("csSecure.exe");
       Application.Run((Form)new MainUI()); // added.
-        /*
+        /* old login thing I used to use.
         if (new Login().ShowDialog() == DialogResult.OK)
         Application.Run((Form) new MainUI());
       else
