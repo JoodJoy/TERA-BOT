@@ -4,5 +4,28 @@ address that is located in 90% > of what I though < usefull offsets. By finding 
 a bit faster.
 
 
-Ready for this sweet info?
+Ready for this sweet info? I was to lazy to finish making an aob for this so my method is a little strange.
 
+K. Here is what you need to do.
+
+Get on le cheat engine.
+Switch to String. (unicode? I think? If you get no green addresses or you get nothing try with out it.)
+Search C1D
+You should get addresses that look like this : http://i.imgur.com/sXMf0Lg.png
+Next, browse each green address in Memory View
+Look around for something that looks similar to this : http://prntscr.com/2lelkd
+Okay you are probably asking "DAFAQ? ZEKE?!" why that? The answer is simple.
+Go back a few bytes (about 4), and look at it again while comparing what you found with this picture below.
+It hardly ever changes : http://prntscr.com/2lel0s <- Two versions Fall / Winter 2013
+Well... that is if TERA Employees never look at this github which will probably not happen.
+
+
+Enjoy!
+
+PS - Don't be a credit whore and start claiming everything in my github yours just because you think that I'm not on
+your forum or enmasse is not watching you. I'll just give a warning to everyone. Companies can kill you with Lawsuits. 
+You are violating their TOS/EULA by doing this and there is no way out 99.99% of the time. So GG yah kiddies. 
+So enjoy your FREE education from me and make some useful programs in life with some of the funtions in my TERA-BOT.
+
+
+- Zeke
