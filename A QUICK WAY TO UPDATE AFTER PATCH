@@ -1,2 +1,8 @@
 Wondering how to find all the pointers, offsets, and base addresses all over again after a patch?
-Chances are you will have to manually 
+Chances are you will have to manually via pointer scans and etc. However, there is a trick to find the most common base
+address that is located in 90% > of what I though < usefull offsets. By finding this you can find what you need 
+a bit faster.
+
+
+Ready for this sweet info?
+
